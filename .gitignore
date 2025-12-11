@@ -1,0 +1,58 @@
+# ------------------------------------
+# 1. Node / Frontend
+# ------------------------------------
+node_modules/
+dist/
+build/
+.npm/
+.yarn/
+.yarn-cache/
+pnpm-lock.yaml
+
+# ------------------------------------
+# 2. Python / Backend
+# ------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+.mypy_cache/
+
+# ------------------------------------
+# 3. ML Models & Data (CRITICAL ADDITIONS)
+# ------------------------------------
+# Ignore all PyTorch model files
+**/*.pt
+
+# Ignore all large data directories
+backend/data/models/
+backend/data/tts/
+data/models/
+data/processed/
+data/raw/
+**/*.jsonl
+**/*.tsv
+**/*.wav
+
+# ------------------------------------
+# 4. OS / Editor
+# ------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ------------------------------------
+# 5. Env / Secrets / Logs
+# ------------------------------------
+.env
+.env.*
+*.sqlite3
+*.log
+temp/
